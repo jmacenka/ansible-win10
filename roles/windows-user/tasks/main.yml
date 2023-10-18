@@ -1,0 +1,7 @@
+---
+- name: Create a new user
+  ansible.windows.win_user:
+    name: "{{ win_username }}"
+    password: "{{ win_password }}"
+    state: present
+    password_never_expired: yes

@@ -1,0 +1,3 @@
+---
+- name: Install Adobe Reader using Chocolatey
+  ansible.windows.win_command: choco install adobereader -y

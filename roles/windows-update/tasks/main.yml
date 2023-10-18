@@ -1,0 +1,5 @@
+---
+- name: Ensure Windows is fully updated
+  ansible.windows.win_updates:
+    category_names: ['CriticalUpdates', 'SecurityUpdates']
+    reboot: yes

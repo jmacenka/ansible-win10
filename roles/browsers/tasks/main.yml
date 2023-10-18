@@ -1,0 +1,6 @@
+---
+- name: Install Google Chrome using Chocolatey
+  ansible.windows.win_command: choco install googlechrome -y
+
+- name: Install Mozilla Firefox using Chocolatey
+  ansible.windows.win_command: choco install firefox -y

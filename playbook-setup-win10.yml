@@ -1,0 +1,15 @@
+---
+- hosts: win10
+  vars_files:
+    - credentials
+  vars:
+    ansible_user: "{{ admin_user }}"
+    ansible_password: "{{ admin_password }}"
+  gather_facts: true
+  roles:
+    - windows-user
+    - windows-update
+    - ms-teams
+    - microsoft-365
+    - browsers
+    - adobe-reader

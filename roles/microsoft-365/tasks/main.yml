@@ -1,0 +1,3 @@
+---
+- name: Install Microsoft 365 using Chocolatey
+  ansible.windows.win_command: choco install Office365Business -y
